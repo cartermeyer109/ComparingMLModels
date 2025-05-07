@@ -15,6 +15,7 @@ from torch.nn import functional as F
 from sklearn.metrics import mean_squared_error, r2_score
 
 #Reads in house sale data
+#https://www.kaggle.com/datasets/animeshparikshya/house-sale-data-81-column?select=test.csv
 df = pd.read_csv("house_sale_data.csv")
 
 df[df.select_dtypes('int64').columns] = df.select_dtypes('int64').astype('float64')
